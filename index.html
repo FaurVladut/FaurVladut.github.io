@@ -1,91 +1,151 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofoliu - Faur Vlăduț</title>
-    <style>
-        /* Design modern și minimalist */
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background-color: #f9f9f9;
-        }
+<style>
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+body {
+    background-color: #141414; 
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 40px;
+  }
+  th, td {
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #e50914; 
+  }
 
-        header {
-            border-bottom: 3px solid #2c3e50;
-            margin-bottom: 30px;
-            padding-bottom: 10px;
-        }
-
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            color: #2980b9;
-            border-left: 5px solid #2980b9;
-            padding-left: 15px;
-            margin-top: 30px;
-        }
-
-        .highlight {
-            background-color: #e8f4fd;
-            padding: 15px;
-            border-radius: 8px;
-            border: 1px solid #d1e9f9;
-        }
-
-        a {
-            color: #2980b9;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            margin-top: 50px;
-            font-size: 0.9rem;
-            color: #777;
-            text-align: center;
-        }
-    </style>
+</style>
+<title>Page Title</title>
 </head>
 <body>
 
-    <header>
-        <h1>Bun venit pe pagina mea!</h1>
-        <p>Mă numesc <strong>Faur Vlăduț</strong> și sunt student la <strong>Calculatoare</strong>.</p>
-    </header>
+<h1>Pagina web pentru filme, asemanatoare la letterboxd</h1>
+<a href="https://letterboxd.com/"target="_blank">Visit letterboxd!</a>
 
-    <section>
-        <h2>Despre mine</h2>
-        <p>Sunt pasionat de programare, baze de date și dezvoltare software.</p>
-    </section>
 
-    <section>
-        <h2>Proiecte</h2>
-        <div class="highlight">
-            <p><strong>Bază de date de șah</strong> – proiect complex ce conține peste <strong>70.000 de intrări</strong>.</p>
-        </div>
-    </section>
+<p>goodfellas.</p>
+<img src="https://ichef.bbci.co.uk/images/ic/480xn/p0m13mxj.jpg.webp" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 480px; height: 364px; margin: 0px; width: 288px;" alt="We wanted to make it real': How Goodfellas reinvented the ..." jsname="kn3ccd">
+<table>
+  <tr>
+    <th>Titlu Film</th>
+    <th>Regizor</th>
+    <th>An Lansare</th>
+  </tr>
+  <tr>
+    <td>Goodfellas</td>
+    <td>Martin Scorsese</td>
+    <td>1990</td>
+  </tr>
+  <tr>
+    <td>Inception</td>
+    <td>Christopher Nolan</td>
+    <td>2010</td>
+  </tr>
+  <tr>
+    <td>Parasite</td>
+    <td>Bong Joon-ho</td>
+    <td>2019</td>
+  </tr>
+</table>
 
-    <section>
-        <h2>Contact</h2>
-        <p>Mă poți contacta la adresa de email: <a href="mailto:fvladut137@gmail.com">fvladut137@gmail.com</a></p>
-    </section>
+<h3>Top Premii Oscar 2024</h3>
+<ol>
+  <li>Oppenheimer</li>
+  <li>Poor Things</li>
+  <li>The Zone of Interest</li>
+</ol>
 
-    <footer>
-        &copy; 2026 Faur Vlăduț - Pagina generată prin GitHub Pages
-    </footer>
+<div style="margin: 20px 0;">
+  Analiza critică: <div>"Cinema-ul nu este despre ceea ce este în cadru, ci despre ceea ce este lăsat pe dinafară."</div> — Martin Scorsese.
+</div>
+
+<strong>Notă importantă:</strong>
+<p>Filmele de artă necesită atenție sporită - <b>nu ratați detaliile din fundal!</b></p>
+
+<h3>Unde poți viziona online:</h3>
+<ul>
+  <li>Netflix</li>
+  <li>HBO Max</li>
+  <li>Disney+</li>
+</ul>
+
+<label for="genres">Alege genul preferat:</label>
+<select name="genres" id="genres">
+  <option value="sci-fi">Sci-Fi</option>
+  <option value="horror">Horror</option>
+  <option value="comedy">Comedie</option>
+  <option value="documentary">Documentar</option>
+</select>
+
+<br><br>
+
+<label for="movie-review">Recenzia ta pentru ultimul film văzut:</label><br>
+<textarea id="movie-review" name="movie-review" rows="4" cols="50">
+Scrie aici părerea ta despre regie, actori și coloana sonoră...
+</textarea>
+
+<br><br>
+
+<form action="/subscribe_cinefil.php" method="get">
+  <label for="fname">Prenume cinefil:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="fav_actor">Actor preferat:</label>
+  <input type="text" id="fav_actor" name="fav_actor"><br><br>
+  <input type="submit" value="Abonează-te la noutăți">
+</form>
+
+<br>
+
+<form action="/create_profile.php">
+  <fieldset>
+    <legend>Profil Critic de Film:</legend>
+    <label for="username">Nume utilizator:</label>
+    <input type="text" id="username" name="username"><br><br>
+    
+    <label for="email">Email pentru invitații :</label>
+    <input type="email" id="email" name="email"><br><br>
+    
+    <label for="membership">Data de când ești pasionat de film:</label>
+    <input type="date" id="membership" name="membership"><br><br>
+    
+    <input type="submit" value="Creează Cont">
+  </fieldset>
+</form>
+
+
+
+<p>Posterul filmului are un contrast de <span style="color:red; font-weight:bold;">roșu</span> intens.</p>
+
+<table>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$80</td>
+  </tr>
+  <tr>
+    <td colspan="2">Sum: $180</td>
+  </tr>
+</table>
+
 
 </body>
 </html>
